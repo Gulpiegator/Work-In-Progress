@@ -66,6 +66,9 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R) && currentCheckpoint != null){
             RespawnAtCheckpoint();
         }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+            SceneManager.LoadScene("Menu");
     }
 
     //check if player is on ground for jumping
